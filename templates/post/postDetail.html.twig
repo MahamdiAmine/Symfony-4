@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Post {{ post.id }} {% endblock %}
+
+{% block body %}
+    <h1>Post #{{ post.id }}</h1>
+    <h1>{{ post.category }}</h1>
+    <p>{{ post.title }}</p>
+    <img src="{{ '/uploads/'~ post.image }}">{{ post.title }}>
+{% endblock %}
